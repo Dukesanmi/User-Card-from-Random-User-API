@@ -86,7 +86,7 @@ class App extends React.Component {
     return (
       <div className= {this.state.darkMode ? 'App-dark' : 'App-light'} >
         <div className="App-header">
-          <header>Contact List Made with <i class="fab fa-react"></i>React</header> 
+          <header>Contact Card Made with React</header> 
           <nav>
             <div className="toggle-container">
               <span style={{ color: this.state.darkMode ? "grey" : "yellow" }}>☀</span>
@@ -107,7 +107,7 @@ class App extends React.Component {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Hello People!</h1>
         <h2 onClick={handleClick}>{message}</h2>
-        <h3>Contact cards created out of user data gotten from the Random User API</h3>
+        <h3>Contact cards created out of user data fetched from Random User API</h3>
         {renderContacts}
 
       </div>
